@@ -1,0 +1,133 @@
+.hautDePage {
+    background-color: $color-secondary;
+    border-radius: 15px;
+    position: relative;
+    padding-left: 50px;
+    overflow: hidden;
+    width: 80vw;
+    margin: 0 auto 50px;
+
+    h1 {
+        font-weight: 700;
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding-bottom: 20px;
+
+    }
+
+    img {
+        height: 400px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+
+    div {
+        padding: 50px 30px;
+        color: $color-primary
+    }
+
+    .btnMore {
+        background-color: $color-primary;
+        box-shadow: 2px 2px 8px black;
+        color: $color-optional1;
+
+        span {
+            position: relative;
+            left: 0px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover span {
+            left: 5px;
+            color: $color-golden;
+        }
+    }
+}
+
+.sectionServices {
+    border-radius: 15px;
+    margin: auto;
+    height: 60vh;
+    width: 100%;
+
+    div {
+        height: 100%;
+        width: 100%;
+        gap: 5px;
+
+        div {
+            gap: 5px;
+        }
+
+        .sectionServiceImg1 {
+            background-image: url("../img/homme-assis-batiment.jpg");
+            height: 100%;
+
+            a {
+                @include overlay;
+            }
+        }
+
+        .sectionServiceImg2 {
+            background-image: url("../img/passport.jpg");
+            height: 50%;
+
+            a {
+                @include overlay;
+            }
+        }
+
+        .sectionServiceImg3 {
+            background-image: url("../img/montgolfiere.jpg");
+            height: 50%;
+
+            a {
+                @include overlay;
+            }
+        }
+    }
+}
+
+.sectionFeatures {
+    padding-top: 80px;
+    background-image: url("../img/wave.svg");
+    background-position: center;
+    background-size: cover;
+    text-align: end;
+    margin-bottom: 10%;
+    h2 {
+        margin-bottom: 50px;
+
+    }
+    h5{
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+    i {
+        color: $color-secondary;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .sectionFeatures{
+        margin-bottom: 15%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .sectionFeatures{
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hautDePage img {
+        display: none;
+    }
+    .sectionFeatures{
+        margin-bottom: 15%;
+    }
+    
+}

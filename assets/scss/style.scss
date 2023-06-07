@@ -1,0 +1,31 @@
+@import 'abstract/variable';
+@import 'mixin/mixin';
+@import 'includes/header';
+@import 'includes/main';
+@import 'includes/footer';
+
+body{
+    font-family: $font;
+    background-color: #F5F5F5;
+}
+main{
+    background-color: $color-primary;
+}
+header{
+    background-color: $color-primary;
+}
+.logo{
+    height: 50px;
+}
+h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+
+@media screen and (max-width: 997) {
+    .contactDiv{
+        position: relative !important;
+        top: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.footerContainer{
+    padding-top: 30vh;
+    @include ulList;
+    ul{
+        gap: 25px;
+    }
+    max-width: 1500px;
+    .contactDiv{
+        background-color: $color-secondary;
+        height: 40vh;
+        top: -150px;
+        border-radius: 15px;
+        position: absolute;
+    }
+    .footerFirstPart{
+        border-bottom: 1px solid grey;
+        padding-bottom: 50px;
+    }
+    .footerSecondPart{
+        padding: 40px 0;
+        p{
+            font-size: 0.75rem;
+            margin: 0;
+            color: grey;
+        }
+        i{
+            color: $color-primary;
+        }
+        .socials{
+            gap: 10px;
+        }
+    }
+}
+footer {
+    background-color: $color-optional1
+}

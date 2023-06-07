@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "lato-regular";
+  src: url("../fonts/lato/Lato-Regular.ttf");
+}
+.btnStyle {
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.sectionServiceImg1, .sectionServiceImg2, .sectionServiceImg3 {
+  width: 50%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10%;
+}
+section nav ul {
+  list-style: none;
+  display: flex;
+}
+section nav ul li {
+  color: #747474;
+}
+section nav ul li a {
+  text-decoration: none;
+}
+section nav ul li a:visited {
+  color: #747474;
+}
+section nav ul li a:hover {
+  color: #1D1D1F;
+}
+
+.hautDePage {
+  background-color: #E7816B;
+  border-radius: 15px;
+  position: relative;
+  padding-left: 50px;
+  overflow: hidden;
+  width: 80vw;
+  margin: 0 auto 50px;
+}
+.hautDePage h1 {
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.hautDePage p {
+  padding-bottom: 20px;
+}
+.hautDePage img {
+  height: 400px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+.hautDePage div {
+  padding: 50px 30px;
+  color: #FFFFFF;
+}
+.hautDePage .btnMore {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 8px black;
+  color: #1D1D1F;
+}
+.hautDePage .btnMore span {
+  position: relative;
+  left: 0px;
+  transition: all 0.2s ease-in-out;
+}
+.hautDePage .btnMore:hover span {
+  left: 5px;
+  color: #e0a80d;
+}
+
+.sectionServices {
+  border-radius: 15px;
+  margin: auto;
+  height: 60vh;
+  width: 100%;
+}
+.sectionServices div {
+  height: 100%;
+  width: 100%;
+  gap: 5px;
+}
+.sectionServices div div {
+  gap: 5px;
+}
+.sectionServices div .sectionServiceImg1 {
+  background-image: url("../img/homme-assis-batiment.jpg");
+  height: 100%;
+}
+.sectionServices div .sectionServiceImg1 a {
+  text-decoration: none;
+}
+.sectionServices div .sectionServiceImg1 a div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px black;
+}
+.sectionServices div .sectionServiceImg1 a div span {
+  left: 0;
+  position: relative;
+  color: #e0a80d;
+  transition: all 0.2s ease-in-out;
+}
+.sectionServices div .sectionServiceImg1 a div:hover span {
+  left: 10px;
+}
+.sectionServices div .sectionServiceImg1 a:hover div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.sectionServices div .sectionServiceImg2 {
+  background-image: url("../img/passport.jpg");
+  height: 50%;
+}
+.sectionServices div .sectionServiceImg2 a {
+  text-decoration: none;
+}
+.sectionServices div .sectionServiceImg2 a div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px black;
+}
+.sectionServices div .sectionServiceImg2 a div span {
+  left: 0;
+  position: relative;
+  color: #e0a80d;
+  transition: all 0.2s ease-in-out;
+}
+.sectionServices div .sectionServiceImg2 a div:hover span {
+  left: 10px;
+}
+.sectionServices div .sectionServiceImg2 a:hover div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.sectionServices div .sectionServiceImg3 {
+  background-image: url("../img/montgolfiere.jpg");
+  height: 50%;
+}
+.sectionServices div .sectionServiceImg3 a {
+  text-decoration: none;
+}
+.sectionServices div .sectionServiceImg3 a div {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px black;
+}
+.sectionServices div .sectionServiceImg3 a div span {
+  left: 0;
+  position: relative;
+  color: #e0a80d;
+  transition: all 0.2s ease-in-out;
+}
+.sectionServices div .sectionServiceImg3 a div:hover span {
+  left: 10px;
+}
+.sectionServices div .sectionServiceImg3 a:hover div {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sectionFeatures {
+  padding-top: 80px;
+  background-image: url("../img/wave.svg");
+  background-position: center;
+  background-size: cover;
+  text-align: end;
+  margin-bottom: 10%;
+}
+.sectionFeatures h2 {
+  margin-bottom: 50px;
+}
+.sectionFeatures h5 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.sectionFeatures i {
+  color: #E7816B;
+}
+
+@media screen and (max-width: 1300px) {
+  .sectionFeatures {
+    margin-bottom: 15%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .sectionFeatures {
+    margin-bottom: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hautDePage img {
+    display: none;
+  }
+  .sectionFeatures {
+    margin-bottom: 15%;
+  }
+}
+.footerContainer {
+  padding-top: 30vh;
+  max-width: 1500px;
+}
+.footerContainer ul {
+  list-style: none;
+  display: flex;
+}
+.footerContainer ul li {
+  color: #747474;
+}
+.footerContainer ul li a {
+  text-decoration: none;
+}
+.footerContainer ul li a:visited {
+  color: #747474;
+}
+.footerContainer ul li a:hover {
+  color: #1D1D1F;
+}
+.footerContainer ul {
+  gap: 25px;
+}
+.footerContainer .contactDiv {
+  background-color: #E7816B;
+  height: 40vh;
+  top: -150px;
+  border-radius: 15px;
+  position: absolute;
+}
+.footerContainer .footerFirstPart {
+  border-bottom: 1px solid grey;
+  padding-bottom: 50px;
+}
+.footerContainer .footerSecondPart {
+  padding: 40px 0;
+}
+.footerContainer .footerSecondPart p {
+  font-size: 0.75rem;
+  margin: 0;
+  color: grey;
+}
+.footerContainer .footerSecondPart i {
+  color: #FFFFFF;
+}
+.footerContainer .footerSecondPart .socials {
+  gap: 10px;
+}
+
+footer {
+  background-color: #1D1D1F;
+}
+
+body {
+  font-family: "lato-regular";
+  background-color: #F5F5F5;
+}
+
+main {
+  background-color: #FFFFFF;
+}
+
+header {
+  background-color: #FFFFFF;
+}
+
+.logo {
+  height: 50px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 997) {
+  .contactDiv {
+    position: relative !important;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

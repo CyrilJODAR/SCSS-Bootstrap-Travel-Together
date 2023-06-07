@@ -1,0 +1,66 @@
+@mixin btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 3px
+}
+.btnStyle{
+    @include btn;
+}
+
+@mixin imgService {
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.sectionServiceImg1, .sectionServiceImg2, .sectionServiceImg3{
+    @include imgService;
+}
+
+@mixin overlay{
+    text-decoration: none;
+    div{
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color : $color-primary;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px black;
+        span{
+            left: 0;
+            position: relative;
+            color : $color-golden;
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover span{
+            left: 10px;
+        }
+    
+    }
+    &:hover div{
+        background-color: rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
+@mixin ulList{
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            color: $color-optional2;
+            a{
+                text-decoration: none;
+            }
+            a:visited{
+                color : $color-optional2;
+            }
+            a:hover{
+                color : $color-optional1;
+            }
+        }
+    }
+}
