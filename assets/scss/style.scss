@@ -22,10 +22,90 @@ h2{
     font-size: 2.5rem;
 }
 
+@media (max-width: 576px) { 
+    
+ }
 
-@media screen and (max-width: 997) {
-    .contactDiv{
-        position: relative !important;
-        top: 0;
+@media (max-width: 768px) { 
+    .hautDePage img {
+        display: none;
     }
-}
+    h2,h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size:0.75rem;
+    }
+    .footerFirstPart{
+        text-align: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .footerSecondPart{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        div{
+            padding-bottom: 15px;
+        }
+        .socials{
+            justify-content: center !important;
+        }
+    }
+    .contactDiv{
+        top: -120px !important;
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+@media (max-width: 992px) { 
+    .sectionFeatures{
+        text-align: center;
+        .cardFeature{
+            flex-direction: column;
+            display: flex;
+            gap: 15px;
+            div{
+                display: contents;
+            }
+        }
+    }
+    .sectionServices{
+        padding: 0 10px;
+        height: 80vh;
+        text-align: center;
+        .sectionContainerImgService{
+            flex-direction: column;
+            .sectionServiceImg1{
+                height: 50% !important;
+            }
+            div{
+                .sectionServiceImg2{
+                    height: 50%;
+                }
+                .sectionServiceImg3{
+                    height: 50%;
+                }
+            }
+        }
+    }
+    .footerFirstPart{
+        justify-content: center !important;
+    }
+ }
+
+@media (max-width: 1200px) { 
+    .contactDiv{
+        border-radius: 0 !important;
+    }
+ }
+
+@media (max-width: 1400px) { 
+    
+ }

@@ -1,5 +1,7 @@
 .footerContainer{
+    margin-top: 20vh;
     padding-top: 30vh;
+    position: relative;
     @include ulList;
     ul{
         gap: 25px;
@@ -10,11 +12,41 @@
         height: 40vh;
         top: -150px;
         border-radius: 15px;
+        padding-left: 20px;
         position: absolute;
+        .btnMore {
+            background-color: $color-primary;
+            box-shadow: 2px 2px 8px black;
+            color: $color-optional1;
+    
+            span {
+                position: relative;
+                left: 0px;
+                transition: all 0.2s ease-in-out;
+            }
+    
+            &:hover span {
+                left: 5px;
+                color: $color-golden;
+            }
+        }
+        .contactTxt{
+            margin: auto;
+        }
+        .btnInTouch{
+            margin: auto;
+            text-align: center;
+        }
     }
     .footerFirstPart{
         border-bottom: 1px solid grey;
         padding-bottom: 50px;
+        justify-content: space-between;
+        .listeuStyle{
+            &:hover a{
+                color: white;
+            }
+        }
     }
     .footerSecondPart{
         padding: 40px 0;
@@ -28,6 +60,7 @@
         }
         .socials{
             gap: 10px;
+            justify-content: end;
         }
     }
 }

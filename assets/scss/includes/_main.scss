@@ -49,9 +49,10 @@
 
 .sectionServices {
     border-radius: 15px;
-    margin: auto;
+    margin: 0 auto 50px;
     height: 60vh;
     width: 100%;
+    display: flex;
 
     div {
         height: 100%;
@@ -92,42 +93,24 @@
 }
 
 .sectionFeatures {
-    padding-top: 80px;
     background-image: url("../img/wave.svg");
-    background-position: center;
     background-size: cover;
+    background-position: start;
+    flex-direction: column;
     text-align: end;
-    margin-bottom: 10%;
+    div{
+        padding: 20px;
+        h5{
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        i {
+            color: $color-secondary;
+        }
+    }
     h2 {
-        margin-bottom: 50px;
+        margin-bottom: 80px;
 
     }
-    h5{
-        font-size: 1.5rem;
-        margin: 15px 0;
-    }
-    i {
-        color: $color-secondary;
-    }
-}
 
-@media screen and (max-width: 1300px) {
-    .sectionFeatures{
-        margin-bottom: 15%;
-    }
-}
-@media screen and (max-width: 1100px) {
-    .sectionFeatures{
-        margin-bottom: 20%;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .hautDePage img {
-        display: none;
-    }
-    .sectionFeatures{
-        margin-bottom: 15%;
-    }
-    
 }

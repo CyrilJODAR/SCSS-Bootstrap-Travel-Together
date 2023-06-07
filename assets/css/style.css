@@ -80,9 +80,10 @@ section nav ul li a:hover {
 
 .sectionServices {
   border-radius: 15px;
-  margin: auto;
+  margin: 0 auto 50px;
   height: 60vh;
   width: 100%;
+  display: flex;
 }
 .sectionServices div {
   height: 100%;
@@ -187,44 +188,30 @@ section nav ul li a:hover {
 }
 
 .sectionFeatures {
-  padding-top: 80px;
   background-image: url("../img/wave.svg");
-  background-position: center;
   background-size: cover;
+  background-position: start;
+  flex-direction: column;
   text-align: end;
-  margin-bottom: 10%;
 }
-.sectionFeatures h2 {
-  margin-bottom: 50px;
+.sectionFeatures div {
+  padding: 20px;
 }
-.sectionFeatures h5 {
+.sectionFeatures div h5 {
   font-size: 1.5rem;
   margin: 15px 0;
 }
-.sectionFeatures i {
+.sectionFeatures div i {
   color: #E7816B;
 }
+.sectionFeatures h2 {
+  margin-bottom: 80px;
+}
 
-@media screen and (max-width: 1300px) {
-  .sectionFeatures {
-    margin-bottom: 15%;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .sectionFeatures {
-    margin-bottom: 20%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .hautDePage img {
-    display: none;
-  }
-  .sectionFeatures {
-    margin-bottom: 15%;
-  }
-}
 .footerContainer {
+  margin-top: 20vh;
   padding-top: 30vh;
+  position: relative;
   max-width: 1500px;
 }
 .footerContainer ul {
@@ -251,11 +238,37 @@ section nav ul li a:hover {
   height: 40vh;
   top: -150px;
   border-radius: 15px;
+  padding-left: 20px;
   position: absolute;
+}
+.footerContainer .contactDiv .btnMore {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 8px black;
+  color: #1D1D1F;
+}
+.footerContainer .contactDiv .btnMore span {
+  position: relative;
+  left: 0px;
+  transition: all 0.2s ease-in-out;
+}
+.footerContainer .contactDiv .btnMore:hover span {
+  left: 5px;
+  color: #e0a80d;
+}
+.footerContainer .contactDiv .contactTxt {
+  margin: auto;
+}
+.footerContainer .contactDiv .btnInTouch {
+  margin: auto;
+  text-align: center;
 }
 .footerContainer .footerFirstPart {
   border-bottom: 1px solid grey;
   padding-bottom: 50px;
+  justify-content: space-between;
+}
+.footerContainer .footerFirstPart .listeuStyle:hover a {
+  color: white;
 }
 .footerContainer .footerSecondPart {
   padding: 40px 0;
@@ -270,6 +283,7 @@ section nav ul li a:hover {
 }
 .footerContainer .footerSecondPart .socials {
   gap: 10px;
+  justify-content: end;
 }
 
 footer {
@@ -298,10 +312,79 @@ h2 {
   font-size: 2.5rem;
 }
 
-@media screen and (max-width: 997) {
+@media (max-width: 768px) {
+  .hautDePage img {
+    display: none;
+  }
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  .footerFirstPart {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerFirstPart ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerSecondPart {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerSecondPart div {
+    padding-bottom: 15px;
+  }
+  .footerSecondPart .socials {
+    justify-content: center !important;
+  }
   .contactDiv {
-    position: relative !important;
-    top: 0;
+    top: -120px !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .sectionFeatures {
+    text-align: center;
+  }
+  .sectionFeatures .cardFeature {
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+  }
+  .sectionFeatures .cardFeature div {
+    display: contents;
+  }
+  .sectionServices {
+    padding: 0 10px;
+    height: 80vh;
+    text-align: center;
+  }
+  .sectionServices .sectionContainerImgService {
+    flex-direction: column;
+  }
+  .sectionServices .sectionContainerImgService .sectionServiceImg1 {
+    height: 50% !important;
+  }
+  .sectionServices .sectionContainerImgService div .sectionServiceImg2 {
+    height: 50%;
+  }
+  .sectionServices .sectionContainerImgService div .sectionServiceImg3 {
+    height: 50%;
+  }
+  .footerFirstPart {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 1200px) {
+  .contactDiv {
+    border-radius: 0 !important;
   }
 }
 
